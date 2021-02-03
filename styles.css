@@ -1,0 +1,395 @@
+
+html,body{
+	height: 100%;
+	widows: 100%;
+	font-family: 'Poppins',sans-serif;
+	color: black;
+	position: relative;
+  }
+  body{
+	font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+  }
+
+  .border{
+	border-bottom: 1px solid rgba(187, 188, 196, 0.31);
+	width: 50%;
+	margin: 50px auto;
+  }
+  .navcolor{
+	background:#fff;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+  }
+  .nav-item a{
+	color:black;
+	font-size: 12px;
+  }
+  .top{
+	position: relative;
+	top: -60px;
+	opacity: 0;
+	animation: fadeIn 3s linear;
+	animation-fill-mode: both;
+  }
+  @keyframes fadeIn{
+	  0%{
+		  opacity: 0;
+	  }
+	  100%{
+		  opacity: 1;
+	  }
+  }
+  .top img{
+	width: 100%;
+	height: 100%;
+  }
+  
+  .src{
+	display: none;
+  }
+  .top-description{
+	letter-spacing: 0.1em;
+	text-align: center;
+	color: black;
+	position: absolute;
+	top: 54%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  }
+  .top-description p{
+	color:black;
+  }
+  .name{
+	font-size: 50px;
+	font-weight: 600;
+  }
+  .name2{
+	font-size: 25px;
+	line-height: 0;
+	font-weight: 600;
+	opacity: 0;
+	animation: fadeIn 6s linear;
+	animation-fill-mode: both;
+  }
+  @keyframes fadeIn{
+	  0%{
+		  opacity: 0;
+	  }
+	  100%{
+		  opacity: 1;
+	  }
+  }
+
+
+  @media screen and (max-width: 480px), (max-width: 800px){
+	.navcolor{
+	  background: none;
+	  opacity: 0.8;
+	  position: fixed;
+	  top: 0;
+	  height: 50px;
+	  z-index: 2;
+	  width: 100%;
+	}
+	.navbar-expand-md>.container, .navbar-expand-md>.container-fluid{
+	  position: relative;
+	}
+	.navcolor button{
+	  background:#fff;
+	  opacity: 0.7;
+	  position:fixed;
+	  top: 0;
+	  left: 10px;
+	}
+	.navbar-collapse{
+	  background: #fff;
+	  position: absolute;
+	  top:50px;
+	  width: 80%;
+	}
+	.top h1{
+	  font-size: 30px;
+	}
+	.top button{
+	  font-size: 10px;
+	}
+	.top-description{
+	  top:60%;
+	}
+	.top-description p{
+	  font-size: 14px;
+	}
+	.name{
+	  font-size: 20px !important;
+	}
+	.about img{
+	  width: 50%;
+	  border-radius: 50%;
+	}
+	.about{
+	  text-align: center;
+	  margin: 0 auto;
+	  position: relative;
+	  right: 36px;
+	}
+	.aboutdes{
+	  margin-top: 20px;
+	  width: 100%;
+	}
+	.aboutdes a{
+		cursor: pointer;
+	}
+	.src{
+	  display: block;
+	}
+	.srcc{
+	  display: none;
+	}
+   }
+  .about img{
+  margin:0 auto;
+  display: block;
+  }
+  .about h2{
+	margin-bottom: 20px;
+  }
+  .aboutdes a{
+	margin: 10px;
+  }
+  .carousel-caption{
+	position: absolute;
+	top:40%;
+  }
+  .skills{
+	margin-top: 100px;
+	color:white;
+	position: relative;
+  }
+  .skillp h2{
+	text-align: center;
+	margin-bottom: 60px;
+	padding-top: 40px;
+  }
+  .html{
+	text-align: center;
+  }
+  .fa-code{
+	color: red;
+	font-size: 70px;
+	margin: 30px 0;
+	margin-bottom: 60px;
+  }
+  .jQuery{
+	color: rgb(33, 148, 197);
+	font-size: 70px;
+	margin: 30px 0;
+  }
+  .photoshop{
+	height: 100px;
+	width: 100px;
+	margin: 30px 0;
+  }
+  .lllustrator{
+	height: 100px;
+	width: 100px;
+	margin: 30px 0;
+	margin-bottom: 35px;
+  }
+
+
+  .skillo{
+	text-align: center;
+	position: relative;
+  }
+  .a {
+	background-color: rgba(252, 252, 252, 0.62);
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  text-indent:-999px;
+	  z-index: -1;
+   /* 必要であればリンク要素の重なりのベース順序指定 */
+  }
+
+  .works{
+	text-align: center;
+	padding-bottom: 40px;
+	color:black;
+  }
+  .works h2{
+	padding-top: 40px;
+  }
+  .isara{
+	margin-top: 30px;
+  }
+  .works p{
+	margin-bottom: 40px;
+  }
+  .contact{
+	text-align: center;
+  
+	background-color: rgba(93, 133, 201, 0.25);
+	padding-bottom: 40px;
+  }
+  .contact a{
+	font-size: 70px;
+	margin: 30px;
+  }
+  
+  .form input,button{
+	display: block;
+	margin: 20px auto;
+  }
+  .fa-facebook-square{
+	/* font-size: 70px;
+	margin: 30px; */
+	color: rgb(61, 77, 148);
+  }
+  .fa-twitter{
+	/* font-size: 70px;
+	margin:  30px; */
+	color: rgb(108, 163, 246)
+  }
+  .fa-instagram{
+	/* font-size: 70px;
+	margin: 30px; */
+	color: rgb(201, 58, 187)
+  }
+  .form input,textarea{
+	width: 350px;
+	border-radius: 5px;
+	border: none;
+	padding: 0 20px;
+  }
+  .sample3 {
+	width:		100%;
+	height:			100%;
+	overflow:		hidden;
+	position:		relative;
+}
+
+  .sample3 .caption {
+	  font-size:		130%;
+	  color:			#fff;
+	  padding-top:		80px;
+	  padding-left:		0px;
+	text-align: left;
+  }
+  .sample3 .mask-on{
+	width:			80%;
+	height: 100%;
+	  position:		absolute;
+	  top:			0;
+	  left:			45px;
+	  background-color:	rgba(0,0,0,0.4);
+	  padding-left: 90px;
+  }
+  .sample3 .mask {
+	  width:			80%;
+	height: 100%;
+	  position:		absolute;
+	  top:			0;
+	  left:			45px;
+	  opacity:		0;	/* マスクを表示しない */
+	  background-color:	rgba(0,0,0,0.4);
+	  -webkit-transition:	all 0.6s ease;
+	  transition:		all 0.6s ease;
+  }
+  .sample3:hover .mask {
+	  opacity:		1;	/* マスクを表示する */
+	  padding-left:		90px;	/* 右にずらす */
+  }
+  @media screen and (max-width: 480px), (max-width: 800px){
+	.sample3:hover .mask{
+	  top: -30px;
+	  height: 100%;
+	  left:37px;
+	}
+	.sample3 .caption {
+	  font-size: 70%;
+	  color: #fff;
+	  padding-top: 50px;
+	  padding-left: 0px;
+	  text-align: left;
+  }
+  .sample3 .mask-on .caption {
+	font-size: 130%;
+	color: #fff;
+	padding-top: 50px;
+	padding-left: 0px;
+	text-align: left;
+}
+	.workr div{
+	  margin: 10px 0;
+	}
+	.works{
+	  padding-bottom: 0;
+	}
+	.contact a{
+	  font-size: 40px;
+	  margin: 10px;
+	}
+  }
+  .mask span{
+	font-size: 15px;
+	border-bottom: 3px solid rgba(218, 227, 218, 0.35);
+  }
+  .form input{
+	height: 40px;
+  }
+  .form button{
+	width: 100px;
+	margin-top: 50px;
+  }
+  footer{
+	text-align: center;
+	height:80px;
+  }
+  footer p{
+	padding-top: 30px;
+	font-size: 10px;
+  }
+  
+  /* ふわっと表示アニメーション */
+  .fuwatto-wrap [class*='fuwatto'] {
+	opacity: 0;
+	transform: translate(0, 10px);
+	transition: all 0.9s;
+  }
+  .fuwatto-wrap [class*='fuwatto'].f-act {
+	opacity: 1;
+	transform: translate(0, 0);
+  }
+  
+  .parallax-window {
+   min-height: 800px;
+   background: transparent;
+  }
+  .parallax-window2 {
+   min-height: 500px;
+   background: transparent;
+  }
+
+  /* iframe */
+  iframe{
+	background: rgb(108, 163, 246);
+  }
+  @media screen and (max-width: 480px), (max-width: 800px) {
+	.parallax-window {
+	 min-height: 450px;
+	 background: transparent;
+	}
+	.parallax-window2 {
+	 min-height: 300px;
+	 background: transparent;
+	}
+  }
